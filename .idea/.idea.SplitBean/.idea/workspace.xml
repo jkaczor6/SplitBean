@@ -13,11 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SplitBean.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/SplitBean.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SplitBean.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SplitBean.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1775654276572</updated>
       <workItem from="1775654278395" duration="3000" />
-      <workItem from="1775668298528" duration="1889000" />
+      <workItem from="1775668298528" duration="2083000" />
     </task>
     <servers />
   </component>
