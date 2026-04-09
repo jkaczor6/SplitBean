@@ -7,6 +7,7 @@
 class UInputAction;
 class UInputMappingContext;
 class UCameraComponent;
+class UMaterial;
 struct FInputActionValue;
 
 UCLASS()
@@ -26,8 +27,17 @@ public:
 	void JumpInputEnd(const FInputActionValue& Value);
 	void UseInput(const FInputActionValue& Value);
 	
+	void SwitchTeams(int32 NewTeamIndex);
+	
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* Camera;
+	
+	UPROPERTY(EditAnywhere, Category = "Bean")
+	UMaterial* DefaultMaterial;
+	UPROPERTY(EditAnywhere, Category = "Bean")
+	UMaterial* RedMaterial;
+	UPROPERTY(EditAnywhere, Category = "Bean")
+	UMaterial* BlueMaterial;
 	
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputMappingContext* IMC;
@@ -39,4 +49,7 @@ public:
 	UInputAction* JumpAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* UseAction;
+	
+	UPROPERTY(VisibleAnywhere)
+	int32 TeamIndex = 0;
 };

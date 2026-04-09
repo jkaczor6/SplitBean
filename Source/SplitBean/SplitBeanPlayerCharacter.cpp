@@ -29,7 +29,7 @@ void ASplitBeanPlayerCharacter::BeginPlay()
 void ASplitBeanPlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
 }
 
 void ASplitBeanPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -84,5 +84,24 @@ void ASplitBeanPlayerCharacter::JumpInputEnd(const FInputActionValue& Value)
 void ASplitBeanPlayerCharacter::UseInput(const FInputActionValue& Value)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Interact")));
+}
+
+void ASplitBeanPlayerCharacter::SwitchTeams(int32 NewTeamIndex)
+{
+	TeamIndex = NewTeamIndex;
+	switch (TeamIndex)
+	{
+	default:
+		GetMesh()->SetMaterial(0, DefaultMaterial);
+		break;
+	case 1:
+		GetMesh()->SetMaterial(0, RedMaterial);
+		break;
+	case 2:
+		GetMesh()->SetMaterial(0, BlueMaterial);
+		break;
+		
+	}
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Joined Team %d"), TeamIndex));
 }
 
