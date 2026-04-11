@@ -3,6 +3,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "PauseMenuWidget.h"
 #include "Kismet/GameplayStatics.h"
 
 ASplitBeanPlayerCharacter::ASplitBeanPlayerCharacter()
@@ -23,6 +24,13 @@ void ASplitBeanPlayerCharacter::BeginPlay()
 		{
 			Subsystem->AddMappingContext(IMC, 0);
 		}
+	}
+	
+	PauseMenuWidget = CreateWidget<UPauseMenuWidget>(UGameplayStatics::GetPlayerController(GetWorld(), 0 ), PauseMenuWidgetClass);
+	if (PauseMenuWidget)
+	{
+		PauseMenuWidget->AddToViewport();
+		PauseMenuWidget->SetVisibility(ESlateVisibility::Hidden);
 	}
 }
 
@@ -51,6 +59,8 @@ void ASplitBeanPlayerCharacter::SetupPlayerInputComponent(UInputComponent* Playe
 		// Using
 		EIC->BindAction(UseAction, ETriggerEvent::Started, this, &ASplitBeanPlayerCharacter::UseInput);
 		
+		// Pausing
+		EIC->BindAction(PauseAction, ETriggerEvent::Started, this, &ASplitBeanPlayerCharacter::PauseInput);
 	}
 
 }
@@ -84,6 +94,23 @@ void ASplitBeanPlayerCharacter::JumpInputEnd(const FInputActionValue& Value)
 void ASplitBeanPlayerCharacter::UseInput(const FInputActionValue& Value)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Interact")));
+}
+
+void ASplitBeanPlayerCharacter::PauseInput(const FInputActionValue& Value)
+{
+	if (!PauseMenuWidget) return;
+	if (PauseMenuWidget->GetVisibility() == ESlateVisibility::Visible) return;
+	
+	PauseMenuWidget->SetVisibility(ESlateVisibility::Visible);
+	
+	APlayerController* APC = UGameplayStatics::GetPlayerController(GetWorld(),0);
+	if (!APC) return;
+	
+	APC->SetShowMouseCursor(true);
+	
+	FInputModeUIOnly Mode;
+	Mode.SetWidgetToFocus(PauseMenuWidget->TakeWidget());
+	APC->SetInputMode(Mode);
 }
 
 void ASplitBeanPlayerCharacter::SwitchTeams(int32 NewTeamIndex)

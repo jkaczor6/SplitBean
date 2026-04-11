@@ -14,12 +14,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_MainMenu.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GI_Core.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GI_Core.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MainMenu/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MainMenu/WBP_MainMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SplitBeanSessionsSubsystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SplitBeanSessionsSubsystem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SplitBean.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/SplitBean.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +44,10 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/PauseMenuWidget.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/PauseMenuWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/SplitBean/SplitBeanSessionsSubsystem.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/SplitBean/SplitBeanSessionsSubsystem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/TeamSwitcher.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/TeamSwitcher.h" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -199,6 +199,7 @@
       <workItem from="1775849983758" duration="841000" />
       <workItem from="1775926705207" duration="37000" />
       <workItem from="1775926775010" duration="108000" />
+      <workItem from="1775933717070" duration="1907000" />
     </task>
     <servers />
   </component>

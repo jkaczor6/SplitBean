@@ -8,6 +8,7 @@ class UInputAction;
 class UInputMappingContext;
 class UCameraComponent;
 class UMaterial;
+class UPauseMenuWidget;
 struct FInputActionValue;
 
 UCLASS()
@@ -26,6 +27,7 @@ public:
 	void JumpInputStart(const FInputActionValue& Value);
 	void JumpInputEnd(const FInputActionValue& Value);
 	void UseInput(const FInputActionValue& Value);
+	void PauseInput(const FInputActionValue& Value);
 	
 	void SwitchTeams(int32 NewTeamIndex);
 	
@@ -49,6 +51,12 @@ public:
 	UInputAction* JumpAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* UseAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* PauseAction;
+	
+	UPROPERTY(EditAnywhere, Category = "HUD")
+	TSubclassOf<UPauseMenuWidget> PauseMenuWidgetClass;
+	UPauseMenuWidget* PauseMenuWidget;
 	
 	UPROPERTY(VisibleAnywhere)
 	int32 TeamIndex = 0;
