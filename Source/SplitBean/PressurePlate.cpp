@@ -1,4 +1,6 @@
 #include "PressurePlate.h"
+
+#include "MovingActor.h"
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "SplitBeanPlayerCharacter.h"
@@ -19,6 +21,7 @@ void APressurePlate::BeginPlay()
 	Super::BeginPlay();
 	
 	BoxComp->OnComponentBeginOverlap.AddDynamic(this, &APressurePlate::OnOverlapBegin);
+	BoxComp->OnComponentEndOverlap.AddDynamic(this, &APressurePlate::OnOverlapEnd);
 }
 
 void APressurePlate::Tick(float DeltaTime)
@@ -32,7 +35,19 @@ void APressurePlate::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AA
 {
 	if (ASplitBeanPlayerCharacter* Player = Cast<ASplitBeanPlayerCharacter>(OtherActor))
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Activated Pressure Plate"));
+		ActivatorCount++;
+		
+		MovingActor->SetShouldMove(true);
+	}
+}
+
+void APressurePlate::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	ActivatorCount--;
+	if (ActivatorCount == 0)
+	{
+		MovingActor->SetShouldMove(false);
 	}
 }
 

@@ -14,6 +14,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/PressurePlate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/PressurePlate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/PressurePlate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/PressurePlate.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,8 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/MovingActor.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/MovingActor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/PauseMenuWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/PauseMenuWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/PressurePlate.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -197,7 +202,7 @@
       <workItem from="1775926705207" duration="37000" />
       <workItem from="1775926775010" duration="108000" />
       <workItem from="1775933717070" duration="1907000" />
-      <workItem from="1776100303908" duration="1089000" />
+      <workItem from="1776100303908" duration="2301000" />
     </task>
     <servers />
   </component>
