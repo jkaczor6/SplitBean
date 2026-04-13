@@ -14,13 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GI_Core.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GI_Core.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MainMenu/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MainMenu/WBP_MainMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SplitBean.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/SplitBean.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +44,8 @@
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/TeamSwitcher.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/TeamSwitcher.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/Teleporter.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/Teleporter.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -200,6 +196,7 @@
       <workItem from="1775926705207" duration="37000" />
       <workItem from="1775926775010" duration="108000" />
       <workItem from="1775933717070" duration="1907000" />
+      <workItem from="1776100303908" duration="710000" />
     </task>
     <servers />
   </component>
