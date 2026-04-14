@@ -30,7 +30,7 @@ void ATeleporter::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActo
 {
 	if (ASplitBeanPlayerCharacter* Player = Cast<ASplitBeanPlayerCharacter>(OtherActor))
 	{
-		GetWorldTimerManager().SetTimer(TeleportDelay, this, &ATeleporter::OnTeleportDelayTimerTimeout, 1.0f, false, 2.0f);
+		GetWorldTimerManager().SetTimer(TeleportDelayTimer, this, &ATeleporter::OnTeleportDelayTimerTimeout, 1.0f, false, TeleportDelay);
 	}
 }
 
@@ -40,5 +40,7 @@ void ATeleporter::OnTeleportDelayTimerTimeout()
 	FVector TeleportLocation = ComponentToTeleportTo->GetActorLocation();
 	
 	UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->SetActorLocation(TeleportLocation);
+	
+	Destroy();
 }
 

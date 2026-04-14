@@ -29,6 +29,8 @@ void ATeamSwitcher::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 	if (ASplitBeanPlayerCharacter* Player = Cast<ASplitBeanPlayerCharacter>(OtherActor))
 	{
 		Player->SwitchTeams(TeamIndexToSwitch);
+		
+		Destroy();
 	}
 }
 

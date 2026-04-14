@@ -14,9 +14,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_BlueTeamSwitcher.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_BlueTeamSwitcher.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_RedTeamSwitcher.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_RedTeamSwitcher.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Core/GI_Core.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Core/GI_Core.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/PressurePlate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/PressurePlate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/PressurePlate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/PressurePlate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/M_BeanDefault.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/M_BeanDefault.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/TeamSwitcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/TeamSwitcher.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/Teleporter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/Teleporter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/Teleporter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/Teleporter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +209,9 @@
       <workItem from="1775926705207" duration="37000" />
       <workItem from="1775926775010" duration="108000" />
       <workItem from="1775933717070" duration="1907000" />
-      <workItem from="1776100303908" duration="2301000" />
+      <workItem from="1776100303908" duration="2419000" />
+      <workItem from="1776171019396" duration="55000" />
+      <workItem from="1776171087406" duration="1193000" />
     </task>
     <servers />
   </component>

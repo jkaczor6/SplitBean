@@ -26,6 +26,8 @@ public:
 	UBoxComponent* BoxComp;
 	UPROPERTY(EditAnywhere)
 	AActor* ComponentToTeleportTo;
+	UPROPERTY(EditAnywhere)
+	int32 TeleportDelay;
 	
-	FTimerHandle TeleportDelay;
+	FTimerHandle TeleportDelayTimer;
 };
