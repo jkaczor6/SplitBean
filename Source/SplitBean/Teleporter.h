@@ -6,6 +6,7 @@
 
 class UBoxComponent;
 class USceneComponent;
+class ASplitBeanPlayerCharacter;
 struct FTimerHandle;
 
 UCLASS()
@@ -28,6 +29,8 @@ public:
 	AActor* ComponentToTeleportTo;
 	UPROPERTY(EditAnywhere)
 	int32 TeleportDelay;
+	
+	ASplitBeanPlayerCharacter* OverlappingPlayer;
 	
 	FTimerHandle TeleportDelayTimer;
 };

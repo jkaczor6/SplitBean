@@ -13,9 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MovingActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MovingActor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Main.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/Teleporter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/Teleporter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/Teleporter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/Teleporter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +210,9 @@
       <workItem from="1776171087406" duration="1193000" />
       <workItem from="1776182531434" duration="870000" />
       <workItem from="1776191157492" duration="417000" />
+      <workItem from="1776191627013" duration="143000" />
+      <workItem from="1776194763302" duration="336000" />
+      <workItem from="1776195981892" duration="101000" />
     </task>
     <servers />
   </component>
