@@ -8,8 +8,9 @@ public class SplitBeanEditorTarget : TargetRules
 	public SplitBeanEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V5;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_6;
+		DefaultBuildSettings = BuildSettingsVersion.V6;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_7;
+		bOverrideBuildEnvironment = true; 
 		ExtraModuleNames.Add("SplitBean");
 	}
 }
