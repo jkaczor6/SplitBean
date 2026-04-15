@@ -1,5 +1,6 @@
 #include "DoorButton.h"
 #include "Components/StaticMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 ADoorButton::ADoorButton()
 {
@@ -25,7 +26,7 @@ void ADoorButton::Activate()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Activated button"));
 	IsActivated = true;
-	
+	UGameplayStatics::PlaySound2D(GetWorld(), ActivationSound);
 	GetWorldTimerManager().SetTimer(DeactivateButtonTimer, this, &ADoorButton::OnDeactivateButtonTimerTimeout, 1.0f, false, DeactivateDelay);
 }
 

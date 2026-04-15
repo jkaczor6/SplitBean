@@ -5,6 +5,7 @@
 #include "DoorButton.generated.h"
 
 class UStaticMeshComponent;
+class USoundBase;
 struct FTimerHandle;
 
 UCLASS()
@@ -24,6 +25,8 @@ public:
 	UStaticMeshComponent* ButtonMesh;
 	UPROPERTY(EditAnywhere)
 	float DeactivateDelay = 1.0f;
+	UPROPERTY(EditAnywhere)
+	USoundBase* ActivationSound;
 	
 	FTimerHandle DeactivateButtonTimer;
 	bool IsActivated = false;
