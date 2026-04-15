@@ -58,6 +58,9 @@ public:
 	TSubclassOf<UPauseMenuWidget> PauseMenuWidgetClass;
 	UPauseMenuWidget* PauseMenuWidget;
 	
+	UPROPERTY(EditAnywhere, Category = "Raycast")
+	float MaxInteractionDistance = 300.0f;
+	
 	UPROPERTY(VisibleAnywhere)
 	int32 TeamIndex = 0;
 };

@@ -5,6 +5,7 @@
 #include "InputActionValue.h"
 #include "PauseMenuWidget.h"
 #include "Kismet/GameplayStatics.h"
+#include "DoorButton.h"
 
 ASplitBeanPlayerCharacter::ASplitBeanPlayerCharacter()
 {
@@ -94,6 +95,26 @@ void ASplitBeanPlayerCharacter::JumpInputEnd(const FInputActionValue& Value)
 void ASplitBeanPlayerCharacter::UseInput(const FInputActionValue& Value)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Interact")));
+	
+	FVector Start = Camera->GetComponentLocation();
+	FVector End = Start + (Camera->GetForwardVector() * MaxInteractionDistance);
+
+	FCollisionShape InteractionSphere = FCollisionShape::MakeSphere(5.0f);
+
+	FCollisionQueryParams Params;
+	Params.AddIgnoredActor(this);
+	
+	FHitResult HitResult;
+	bool HasHit = GetWorld()->SweepSingleByChannel(HitResult, Start, End, FQuat::Identity, ECC_GameTraceChannel1, InteractionSphere, Params);
+	if (HasHit)
+	{
+		AActor* HitActor = HitResult.GetActor();
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Interacted with actor %s"), *HitActor->GetActorNameOrLabel()));
+		if (ADoorButton* Button = Cast<ADoorButton>(HitActor))
+		{
+			Button->Activate();
+		}
+	}
 }
 
 void ASplitBeanPlayerCharacter::PauseInput(const FInputActionValue& Value)
