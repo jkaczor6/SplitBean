@@ -140,13 +140,13 @@ void ASplitBeanPlayerCharacter::SwitchTeams(int32 NewTeamIndex)
 	switch (TeamIndex)
 	{
 	default:
-		GetMesh()->SetMaterial(0, DefaultMaterial);
+		GetMesh()->SetMaterial(1, DefaultMaterial);
 		break;
 	case 1:
-		GetMesh()->SetMaterial(0, RedMaterial);
+		GetMesh()->SetMaterial(1, RedMaterial);
 		break;
 	case 2:
-		GetMesh()->SetMaterial(0, BlueMaterial);
+		GetMesh()->SetMaterial(1, BlueMaterial);
 		break;
 		
 	}
