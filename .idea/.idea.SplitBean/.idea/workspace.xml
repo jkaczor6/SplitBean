@@ -13,8 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/DoorButton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/DoorButton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/DoorButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/DoorButton.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,8 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/ActivatableDoor.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/ActivatableDoor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/DoorButton.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/DoorButton.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/DoorOpener.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -212,7 +214,7 @@
       <workItem from="1776191627013" duration="143000" />
       <workItem from="1776194763302" duration="336000" />
       <workItem from="1776195981892" duration="101000" />
-      <workItem from="1776262173090" duration="2604000" />
+      <workItem from="1776262173090" duration="3498000" />
     </task>
     <servers />
   </component>
