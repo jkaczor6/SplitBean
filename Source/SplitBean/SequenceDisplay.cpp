@@ -16,7 +16,7 @@ ASequenceDisplay::ASequenceDisplay()
 		UPointLightComponent* Light = CreateDefaultSubobject<UPointLightComponent>(*FString::Printf(TEXT("Light_%d"), i));
 		Light->SetupAttachment(RootComponent);
 		Light->SetRelativeLocation(FVector(0.0f, i * 100.0f, 0.0f));
-		Light->SetIntensity(5000.0f);
+		Light->SetIntensity(1000.0f);
 		Light->CastShadows = 0;
 		Lights.Add(Light);
 		
@@ -25,6 +25,7 @@ ASequenceDisplay::ASequenceDisplay()
 		Text->SetRelativeLocation(FVector(0.0f, i * 100.0f, 0.0f));
 		Text->SetWorldSize(60.0f);
 		Text->SetHorizontalAlignment(EHTA_Center);
+		Text->SetTextRenderColor(FColor::Black);
 		Numbers.Add(Text);
 	}
 }
