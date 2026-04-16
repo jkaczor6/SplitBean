@@ -1,6 +1,7 @@
 #include "SequenceDoor.h"
 #include "DoorButton.h"
 #include "Net/UnrealNetwork.h"
+#include "SequenceDisplay.h"
 
 ASequenceDoor::ASequenceDoor()
 {
@@ -60,10 +61,7 @@ void ASequenceDoor::ShuffleSequence()
 		CorrectSequence.Swap(i,j);
 	}
 	
-	FString Debug = TEXT("Sequence: ");
-	for (int32 i : CorrectSequence)
-		Debug += FString::FromInt(i) + TEXT(" ");
-	GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Yellow, Debug);
+	if (Display) Display->UpdateDisplay();
 }
 
 void ASequenceDoor::CheckSequence()

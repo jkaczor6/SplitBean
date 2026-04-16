@@ -16,10 +16,8 @@
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Main.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/ActivatableDoor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/ActivatableDoor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/DoorButton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/DoorButton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/DoorButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/DoorButton.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SequenceDoor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SequenceDoor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SequenceDoor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SequenceDoor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,8 @@
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/PauseMenuWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/PressurePlate.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/PressurePlate.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/SequenceDisplay.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/SequenceDisplay.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/TeamSwitcher.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -235,7 +235,7 @@
       <workItem from="1776281667509" duration="334000" />
       <workItem from="1776282060635" duration="123000" />
       <workItem from="1776291681681" duration="70000" />
-      <workItem from="1776363321666" duration="5283000" />
+      <workItem from="1776363321666" duration="6302000" />
     </task>
     <servers />
   </component>

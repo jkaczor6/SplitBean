@@ -6,6 +6,7 @@
 
 class UStaticMeshComponent;
 class ADoorButton;
+class ASequenceDisplay;
 
 UCLASS()
 class SPLITBEAN_API ASequenceDoor : public AActor
@@ -22,6 +23,8 @@ public:
 	UStaticMeshComponent* DoorMesh;
 	UPROPERTY(EditAnywhere)
 	TArray<ADoorButton*> Buttons;
+	UPROPERTY(EditAnywhere)
+	ASequenceDisplay* Display;
 	UPROPERTY(Replicated, VisibleAnywhere)
 	TArray<int32> CorrectSequence;
 	
