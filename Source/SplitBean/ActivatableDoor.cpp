@@ -4,7 +4,8 @@
 AActivatableDoor::AActivatableDoor()
 {
 	PrimaryActorTick.bCanEverTick = true;
-
+	bReplicates = true;
+	
 	DoorMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("DoorMesh"));
 	SetRootComponent(DoorMesh);
 }

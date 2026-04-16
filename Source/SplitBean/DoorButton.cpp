@@ -41,6 +41,7 @@ void ADoorButton::Activate()
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red,
 	HasAuthority() ? TEXT("SERVER") : TEXT("CLIENT"));
 	IsActivated = true;
+	if (IsSequenceButton) OnButtonActivated.Broadcast(ButtonIndex);
 	MulticastPlaySound();
 	GetWorldTimerManager().SetTimer(DeactivateButtonTimer, this, &ADoorButton::OnDeactivateButtonTimerTimeout, 1.0f, false, DeactivateDelay);
 }
