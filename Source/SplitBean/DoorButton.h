@@ -17,9 +17,15 @@ public:
 	ADoorButton();
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
+	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
 	void Activate();
 	void Deactivate();
 	void OnDeactivateButtonTimerTimeout();
+	
+	UFUNCTION(Server, Reliable)
+	void ServerActivate();
+	UFUNCTION(NetMulticast, Reliable)
+	void MulticastPlaySound();
 
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* ButtonMesh;
@@ -29,5 +35,6 @@ public:
 	USoundBase* ActivationSound;
 	
 	FTimerHandle DeactivateButtonTimer;
+	UPROPERTY(Replicated)
 	bool IsActivated = false;
 };

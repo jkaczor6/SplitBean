@@ -19,14 +19,20 @@ void AActivatableDoor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (!HasAuthority()) return;
+	
 	ActiveActivators = 0;
 	
 	for (ADoorButton* DoorButton : Activators)
 	{
-		if (DoorButton->IsActivated)
+		if (DoorButton)
 		{
-			ActiveActivators++;
+			if (DoorButton->IsActivated)
+			{
+				ActiveActivators++;
+			}
 		}
+		
 	}
 	
 	if (ActiveActivators >= Activators.Num())

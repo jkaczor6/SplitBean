@@ -31,6 +31,9 @@ public:
 	
 	void SwitchTeams(int32 NewTeamIndex);
 	
+	UFUNCTION(Server, Reliable)
+	void ServerInteract(AActor* HitActor);
+	
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* Camera;
 	

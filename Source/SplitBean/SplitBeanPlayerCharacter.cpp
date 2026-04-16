@@ -94,8 +94,6 @@ void ASplitBeanPlayerCharacter::JumpInputEnd(const FInputActionValue& Value)
 
 void ASplitBeanPlayerCharacter::UseInput(const FInputActionValue& Value)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Interact")));
-	
 	FVector Start = Camera->GetComponentLocation();
 	FVector End = Start + (Camera->GetForwardVector() * MaxInteractionDistance);
 
@@ -110,10 +108,7 @@ void ASplitBeanPlayerCharacter::UseInput(const FInputActionValue& Value)
 	{
 		AActor* HitActor = HitResult.GetActor();
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Interacted with actor %s"), *HitActor->GetActorNameOrLabel()));
-		if (ADoorButton* Button = Cast<ADoorButton>(HitActor))
-		{
-			Button->Activate();
-		}
+		ServerInteract(HitActor);
 	}
 }
 
@@ -151,5 +146,14 @@ void ASplitBeanPlayerCharacter::SwitchTeams(int32 NewTeamIndex)
 		
 	}
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Joined Team %d"), TeamIndex));
+}
+
+void ASplitBeanPlayerCharacter::ServerInteract_Implementation(AActor* HitActor)
+{
+	if (ADoorButton* Button = Cast<ADoorButton>(HitActor))
+	{
+		Button->Activate();
+		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Green, HasAuthority() ? TEXT("INTERACT SERVER") : TEXT("INTERACT CLIENT"));
+	}
 }
 
