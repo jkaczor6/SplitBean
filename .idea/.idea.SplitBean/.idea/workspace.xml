@@ -15,10 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_SequenceDisplay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_SequenceDisplay.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Debug.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Lvl_Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Lvl_Main.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SequenceDisplay.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SequenceDisplay.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +60,8 @@
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/TeamSwitcher.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/Teleporter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/Teleporter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/TileGrid.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/TileGrid.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -237,6 +237,7 @@
       <workItem from="1776282060635" duration="123000" />
       <workItem from="1776291681681" duration="70000" />
       <workItem from="1776363321666" duration="7017000" />
+      <workItem from="1776449366203" duration="4112000" />
     </task>
     <servers />
   </component>
