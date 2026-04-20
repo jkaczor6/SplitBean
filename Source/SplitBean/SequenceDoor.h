@@ -7,6 +7,7 @@
 class UStaticMeshComponent;
 class ADoorButton;
 class ASequenceDisplay;
+class USoundBase;
 
 UCLASS()
 class SPLITBEAN_API ASequenceDoor : public AActor
@@ -17,7 +18,8 @@ public:
 	ASequenceDoor();
 	virtual void BeginPlay() override;
 	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
-	
+	UFUNCTION(NetMulticast, Reliable)
+	void MulticastPlaySound(USoundBase* SFX);
 	
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* DoorMesh;
@@ -25,6 +27,10 @@ public:
 	TArray<ADoorButton*> Buttons;
 	UPROPERTY(EditAnywhere)
 	ASequenceDisplay* Display;
+	UPROPERTY(EditAnywhere)
+	USoundBase* SuccessSFX;
+	UPROPERTY(EditAnywhere)
+	USoundBase* FailSFX;
 	UPROPERTY(Replicated, VisibleAnywhere)
 	TArray<int32> CorrectSequence;
 	

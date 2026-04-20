@@ -2,6 +2,7 @@
 #include "DoorButton.h"
 #include "Net/UnrealNetwork.h"
 #include "SequenceDisplay.h"
+#include "Kismet/GameplayStatics.h"
 
 ASequenceDoor::ASequenceDoor()
 {
@@ -38,6 +39,11 @@ void ASequenceDoor::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& 
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 	DOREPLIFETIME(ASequenceDoor, CorrectSequence);
+}
+
+void ASequenceDoor::MulticastPlaySound_Implementation(USoundBase* SFX)
+{
+	UGameplayStatics::PlaySound2D(GetWorld(), SFX);
 }
 
 void ASequenceDoor::OnButtonPressed(int32 Index)
@@ -93,12 +99,12 @@ void ASequenceDoor::ResetPlayerSequence()
 
 void ASequenceDoor::MulticastOnSuccess_Implementation()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Green, TEXT("Sequence correct!"));
+	MulticastPlaySound(SuccessSFX);
 	Destroy();
 }
 
 void ASequenceDoor::MulticastOnFail_Implementation()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, TEXT("Wrong sequence! Reshuffled."));
+	MulticastPlaySound(FailSFX);
 }
 
