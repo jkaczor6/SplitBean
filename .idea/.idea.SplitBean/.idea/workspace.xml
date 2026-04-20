@@ -46,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/DoorButton.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/DoorOpener.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/DoorOpener.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/SplitBean/MirrorCamera.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/MovingActor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/MovingActor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/SplitBean/PauseMenuWidget.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -238,6 +239,7 @@
       <workItem from="1776291681681" duration="70000" />
       <workItem from="1776363321666" duration="7017000" />
       <workItem from="1776449366203" duration="4112000" />
+      <workItem from="1776682480468" duration="4123000" />
     </task>
     <servers />
   </component>
