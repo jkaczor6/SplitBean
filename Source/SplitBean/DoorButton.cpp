@@ -38,8 +38,6 @@ void ADoorButton::Activate()
 		ServerActivate();
 		return;
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red,
-	HasAuthority() ? TEXT("SERVER") : TEXT("CLIENT"));
 	IsActivated = true;
 	if (IsSequenceButton) OnButtonActivated.Broadcast(ButtonIndex);
 	MulticastPlaySound();
