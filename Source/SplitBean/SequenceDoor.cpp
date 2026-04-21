@@ -52,9 +52,6 @@ void ASequenceDoor::OnButtonPressed(int32 Index)
 	if (PlayerSequence.Num() >= CorrectSequence.Num()) return;
 	
 	PlayerSequence.Add(Index);
-	
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, 
-		FString::Printf(TEXT("Pressed: %d, Expected: %d"), Index, CorrectSequence[PlayerSequence.Num() - 1]));
 
 	CheckSequence();
 }
@@ -73,10 +70,6 @@ void ASequenceDoor::ShuffleSequence()
 void ASequenceDoor::CheckSequence()
 {
 	int32 Step = PlayerSequence.Num() - 1;
-	
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Orange,
-		FString::Printf(TEXT("Step %d: Player=%d Correct=%d"),
-			Step, PlayerSequence[Step], CorrectSequence[Step]));
 	
 	if (PlayerSequence[Step] != CorrectSequence[Step])
 	{

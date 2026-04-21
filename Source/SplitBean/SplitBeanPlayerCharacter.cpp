@@ -107,7 +107,6 @@ void ASplitBeanPlayerCharacter::UseInput(const FInputActionValue& Value)
 	if (HasHit)
 	{
 		AActor* HitActor = HitResult.GetActor();
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Interacted with actor %s"), *HitActor->GetActorNameOrLabel()));
 		ServerInteract(HitActor);
 	}
 }
@@ -145,7 +144,6 @@ void ASplitBeanPlayerCharacter::SwitchTeams(int32 NewTeamIndex)
 		break;
 		
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Joined Team %d"), TeamIndex));
 }
 
 void ASplitBeanPlayerCharacter::ServerInteract_Implementation(AActor* HitActor)
@@ -153,7 +151,6 @@ void ASplitBeanPlayerCharacter::ServerInteract_Implementation(AActor* HitActor)
 	if (ADoorButton* Button = Cast<ADoorButton>(HitActor))
 	{
 		Button->Activate();
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Green, HasAuthority() ? TEXT("INTERACT SERVER") : TEXT("INTERACT CLIENT"));
 	}
 }
 
