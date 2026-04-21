@@ -63,6 +63,12 @@ SplitBean was developed as a portfolio project to demonstrate:
 
 ---
 
+## 🕹️ Play
+
+The game is available on itch.io: [jkaczor6.itch.io/splitbean](https://jkaczor6.itch.io/splitbean)
+
+---
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
