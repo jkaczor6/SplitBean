@@ -20,6 +20,8 @@ public:
 	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
 	UFUNCTION(NetMulticast, Reliable)
 	void MulticastPlaySound(USoundBase* SFX);
+	UFUNCTION()
+	void OnRep_CorrectSequence();
 	
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* DoorMesh;
@@ -31,7 +33,7 @@ public:
 	USoundBase* SuccessSFX;
 	UPROPERTY(EditAnywhere)
 	USoundBase* FailSFX;
-	UPROPERTY(Replicated, VisibleAnywhere)
+	UPROPERTY(ReplicatedUsing=OnRep_CorrectSequence, VisibleAnywhere)
 	TArray<int32> CorrectSequence;
 	
 	

@@ -41,6 +41,11 @@ void ASequenceDoor::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& 
 	DOREPLIFETIME(ASequenceDoor, CorrectSequence);
 }
 
+void ASequenceDoor::OnRep_CorrectSequence()
+{
+	if (Display) Display->UpdateDisplay();
+}
+
 void ASequenceDoor::MulticastPlaySound_Implementation(USoundBase* SFX)
 {
 	UGameplayStatics::PlaySound2D(GetWorld(), SFX);

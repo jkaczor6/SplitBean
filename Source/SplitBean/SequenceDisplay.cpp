@@ -33,8 +33,6 @@ ASequenceDisplay::ASequenceDisplay()
 void ASequenceDisplay::BeginPlay()
 {
 	Super::BeginPlay();
-	FTimerHandle InitTimer;
-	GetWorldTimerManager().SetTimer(InitTimer, this, &ASequenceDisplay::UpdateDisplay, 0.2f, false);
 }
 
 void ASequenceDisplay::UpdateDisplay()

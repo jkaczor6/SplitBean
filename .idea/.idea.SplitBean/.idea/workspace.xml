@@ -13,11 +13,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SplitBean/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SequenceDoor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SequenceDoor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SplitBean/SplitBeanPlayerCharacter.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="a0ea334e-f406-4eaa-87b4-35bb78cb9a5f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,6 +237,7 @@
       <workItem from="1776449366203" duration="4112000" />
       <workItem from="1776682480468" duration="4123000" />
       <workItem from="1776805357469" duration="318000" />
+      <workItem from="1776810344144" duration="118000" />
     </task>
     <servers />
   </component>
