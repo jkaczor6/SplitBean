@@ -75,6 +75,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 📸 Screenshots & Trailer
+## 📸 Screenshots
 
-*Coming soon.*
+| | |
+|---|---|
+| ![](screenshots/screen1.png) | ![](screenshots/screen2.png) |
+| ![](screenshots/screen3.png) | ![](screenshots/screen4.png) |
