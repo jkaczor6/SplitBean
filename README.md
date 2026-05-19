@@ -69,12 +69,6 @@ The game is available on itch.io: [jkaczor6.itch.io/splitbean](https://jkaczor6.
 
 ---
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 ## 📸 Screenshots
 
 | | |
